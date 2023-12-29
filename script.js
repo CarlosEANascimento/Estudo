@@ -60,7 +60,6 @@ document.getElementById('formPesquisa').addEventListener('submit', function (eve
     .then(data => {
         showClientContent.style.display = "block";
         errorClientMessage.style.display = "none";
-        console.log(data);
 
         //data.location
         municipioNome = data.location.name;
@@ -95,36 +94,11 @@ document.getElementById('formPesquisa').addEventListener('submit', function (eve
         chanceOfRainContent.innerText = "chance de chuva: " + municipioChanceChuva + "%";
         uvContent.innerText = "índice ultravioleta: " + municipioRaiosUv;
         lastUpdateContent.innerText = "última atualização: " + municipioUltAtualizacao;
-
-        console.log(data.forecast.forecastday[0]);
-
-        console.log(municipioNome);
-        console.log(municipioPais);
-        console.log(municipioLat.toString());
-        console.log(municipioLon.toString());
-        console.log(municipioHora);
-        console.log(municipioClima);
-        console.log(municipioClimaIcone);
-        console.log(municipioTemp.toString());
-        console.log(municipioSensTermica.toString());
-        console.log(municipioUmidade.toString());
-        console.log(municipioUltAtualizacao);
-        console.log(municipioTempMin.toString());
-        console.log(municipioTempMax.toString());
-        console.log(municipioChanceChuva.toString());
-        console.log(municipioRaiosUv.toString());
     })
     .catch(error =>{
-        console.log(error);
-
         errorClientMessage.style.display = "block";
         showClientContent.style.display = "none";
     })
 
-    console.log(apiUrlWeather);
-    console.log(nomeMunicipio);
-
     document.getElementById('nomeMunicipio').value = "";
 });
-
-//https://servicodados.ibge.gov.br/api/v1/localidades/municipios/{municipio}
