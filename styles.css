@@ -1,0 +1,199 @@
+body{
+    margin: 0%;
+    padding: 0%;
+
+    
+}
+
+.header{
+    padding: 16px;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 10px 46px -33px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 10px 46px -33px rgba(0,0,0,1);
+    box-shadow: 0px 10px 46px -33px rgba(0,0,0,1);
+}
+
+.form-pesquisar-municipio{
+    display: flex;
+    padding: 0%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.form-pesquisar-municipio input{
+    padding: 0 0 0 15px;
+    width: 400px;
+    height:38px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 20px 0 0 20px;
+    transition: 0.2s;
+}
+
+.form-pesquisar-municipio input:hover{
+    border: 1px solid rgb(125, 125, 125);
+}
+
+.form-pesquisar-municipio input:focus{
+    outline: none;
+    border: 1px solid rgba(200, 200, 200, 0.7);
+}
+
+.form-pesquisar-municipio button{
+    padding: 6px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 0px 20px 20px 0px;
+    transition: 0.2s;
+}
+
+.form-pesquisar-municipio button:hover{
+    background-color: rgba(200, 200, 200, 0.3);
+    cursor: pointer;
+}
+
+.form-pesquisar-municipio button img{
+    height: 24px;
+    width: 24px;
+    margin: 0%;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    margin: 0;
+}
+
+.content{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#showClientContent{
+    text-align: center;
+}
+
+.content-header{
+    text-align: center;
+}
+
+.content-header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(42, 42, 158);
+    margin: 0%;
+}
+
+.content-header h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: rgb(125, 125, 125);
+    margin: 0%;
+}
+
+.content-clima{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-clima-collumn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.collumn{
+    padding: 10px;
+}
+
+.content-clima-collumn div{
+    margin: 5px;
+}
+
+.content-clima-collumn div + p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+}
+
+.content-clima-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+}
+
+.content-temp-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row; 
+}
+
+.content-clima-temp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+
+    margin: 0%;
+}
+
+.content-temp-min-max-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.content-temp-min-max-container p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    margin: 0%;
+}
+
+.content-temp-min-max-container p + p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    margin: 0%;
+}
+
+.content-clima .collumn + .collumn{
+    text-align: start;
+}
+
+.content-clima .collumn + .collumn p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0 5px 0;
+}
+
+.content-clima + hr + p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color: rgb(125, 125, 125);
+    margin-top: 20px;
+    margin-bottom: 0%;
+}
+
+.error h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    margin: 0%;
+}
+
+.error h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    margin: 0%;
+}

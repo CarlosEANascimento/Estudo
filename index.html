@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header">
+        <form action="" class="form-pesquisar-municipio" id="formPesquisa">
+            <input type="text" id="nomeMunicipio" name="municipio" placeholder="municipio">
+            <button type="submit" class="search-button"><img src="./images/lupa.png" alt=""></button>
+        </form>
+    </header>
+
+    <div class="content-container">
+        <div class="content" id="showClientContent">
+            <div class="content-header">
+                <h1 id="titleContent">San Paulo - Brazil - 18:39</h1> 
+                <h4 id="coordContent">-23.53, -46.62</h4>
+            </div>
+            <hr>
+    
+            <div class="content-clima">
+                <div class="collumn">
+                    <h2 class="content-clima-title" id="conditionContent">Sunny</h2>
+                    <div class="content-clima-collumn">
+                        <div class="content-temp-container">
+                            <h1 class="content-clima-temp" id="tempContent">30C</h1>
+                            <div class="content-temp-min-max-container">
+                                <p id="maxTempContent">teste</p>
+                                <p id="minTempContent">teste</p>
+                            </div>
+                        </div>
+                        <p id="realFeelContent">teste</p>
+                    </div>
+                </div>
+                <div class="collumn">
+                    <p id="humidityContent">umidade relativa do ar: 20%</p>
+                    <p id="chanceOfRainContent">chance de chuva: 20%</p>
+                    <p id="uvContent">raios uv: 4</p>
+                </div>
+            </div>
+            <hr>
+            <p id="lastUpdateContent">ultima atualização: 18:30</p>
+        </div>
+    
+        <div class="error" id="errorClientMessage">
+            <h1>Ocorreu um erro durante a pesquisa</h1>
+            <hr>
+            <h3>tente novamente</h3>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+</html>
